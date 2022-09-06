@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B6KeRjqE1CiXl63cqBCNSi9o0CO43xkoz7VMSt+0OVtUc6anfCMCDGpcvrqVVRN4UuPH5wg9FqMdvaXCg5Mshw==",
+  "dgSpecHash": "rlPxBwo+N3+REOygjDWv/qT5TWw5oqcYNUAmVJDt6V2B3c1hkDVGHSrEL1zHoXtJBt7MqwynsVwEztH+WfMeWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Imran\\source\\repos\\HVZPlayerTracker\\HVZPlayerTracker\\HVZPlayerTracker.csproj",
+  "projectFilePath": "C:\\Repos\\hvz-player-tracker\\HVZPlayerTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Imran\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Imran\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
