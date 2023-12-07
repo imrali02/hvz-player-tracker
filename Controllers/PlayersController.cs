@@ -1,13 +1,9 @@
 ﻿#nullable disable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using HVZPlayerTracker.Data;
 using HVZPlayerTracker.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HVZPlayerTracker.Controllers
 {
@@ -45,6 +41,7 @@ namespace HVZPlayerTracker.Controllers
         }
 
         // GET: Players/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -53,6 +50,7 @@ namespace HVZPlayerTracker.Controllers
         // POST: Players/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Status")] Player player)
@@ -118,6 +116,7 @@ namespace HVZPlayerTracker.Controllers
         }
 
         // GET: Players/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +135,7 @@ namespace HVZPlayerTracker.Controllers
         }
 
         // POST: Players/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
